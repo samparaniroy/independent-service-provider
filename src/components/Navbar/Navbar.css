@@ -1,8 +1,12 @@
-.navbar-content {
-	text-align: center;
+.navbar-area {
 	background: aquamarine;
-	justify-content: center;
 	padding: 30px 0;
+}
+.navbar-content ul {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+    list-style: none;
 }
 .navbar-content a {
 	margin-right: 20px;
