@@ -5,3 +5,14 @@
 	width: 100%;
 	height: 400px;
 }
+.service-item h1 {
+	padding-top: 20px;
+    padding: 0 16px;
+}
+.service-item p {
+	padding: 10px 16px;
+}
+.service-item span {
+	padding: 0 16px;
+	font-size: 20px;
+}
