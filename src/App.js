@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer'
 import Notfound from './components/Notfound/Notfound';
 import Login from './components/Login/Login/Login';
 import Register from './components/Login/Register/Register';
+import RequireAuth from './components/Login/RequireAuth/RequireAuth';
+import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={<RequireAuth><Checkout></Checkout></RequireAuth>}></Route>
         <Route path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>

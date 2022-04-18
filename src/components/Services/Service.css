@@ -1,5 +1,7 @@
 .service-item {
-	border: 1px solid gray;
+	box-shadow: 0 10px 30px rgba(5, 5, 5, 0.115);
+	text-align: center;
+	border-radius: 5px;
 }
 .service-item img {
 	width: 100%;
@@ -10,9 +12,15 @@
     padding: 0 16px;
 }
 .service-item p {
-	padding: 10px 16px;
+	padding-top: 10px;
 }
-.service-item span {
-	padding: 0 16px;
+.service-item small{
 	font-size: 20px;
+}
+.button-content {
+	padding: 16px 0;
+}
+.button-content a button {
+	background: antiquewhite;
+	padding: 15px 60px;
 }
