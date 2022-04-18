@@ -14,3 +14,6 @@
 	text-decoration: none;
     font-size: 20px;
 }
+.login-button {
+	display: flex;
+}
