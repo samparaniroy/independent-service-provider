@@ -4,6 +4,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -43,6 +45,7 @@ const Login = () => {
                 </form>
                 <p>If You Haven't Account Yet? <Link to='/register' className='text-danger' onClick={navigateRegister}>Please Register</Link></p>
                 <SocialLogin></SocialLogin>
+                <ToastContainer />
             </div>
         );
     };
