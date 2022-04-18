@@ -1,7 +1,7 @@
 .footer-area {
 	padding: 50px 0;
     overflow: hidden;
-    background-color: aquamarine;
+    background-color: #0b114a;
 }
 .footer-content {
 	text-align: center;
@@ -16,6 +16,6 @@
     color: #fff;
 }
 .footer-content p {
-	color: black;
+	color: #fff;
 	font-size: 20px;
 }
