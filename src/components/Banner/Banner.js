@@ -8,7 +8,7 @@ const Banner = () => {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="home-content">
-                                <h1>Tutor class</h1>
+                                <h1> Noreain waltar</h1>
                                 <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
                                 <a href="explore">Explore</a>
                             </div>

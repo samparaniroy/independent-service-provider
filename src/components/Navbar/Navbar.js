@@ -22,7 +22,7 @@ const Navbar = () => {
                                 {
                                     user?
                                        <div className='signout-button'>
-                                           <button onClick={() =>handleSignOut()}>sign out</button>
+                                           <button onClick={handleSignOut}>sign out</button>
                                        </div>
                                     :
                                     <div className='login-button'>
