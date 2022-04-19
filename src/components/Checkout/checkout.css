@@ -1,0 +1,13 @@
+.checkout-form-area {
+	padding: 40px;
+	text-align: center;
+    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.238);
+}
+.checkout-form-area form input {
+	width: 40%;
+	margin-bottom: 20px;
+	height: 48px;
+    padding: 0 10px;
+    border-radius: 5px;
+    bottom: 2px solid #0b114a;
+}

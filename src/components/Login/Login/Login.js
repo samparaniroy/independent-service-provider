@@ -18,7 +18,7 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
       if(user){
-        navigate('/');
+        navigate('/home');
     }
 
     const handleSubmit = event =>{
