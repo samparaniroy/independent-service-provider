@@ -11,6 +11,8 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate =useNavigate();
+    const location =useLocation()
+    let from = location.state?.from?.pathname || "/";
     let errorElement;
     const [
         signInWithEmailAndPassword,
@@ -21,7 +23,7 @@ const Login = () => {
       const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail( auth);
       
       if(user){
-        navigate('/');
+        navigate(from, { replace: true });
     }
     if (error) {
         errorElement=<p className='text-danger'>Error: {error.message}</p>
