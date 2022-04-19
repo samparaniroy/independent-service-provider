@@ -6,6 +6,7 @@ import './Navbar.css'
 
 const Navbar = () => {
     const [user] = useAuthState(auth);
+    
     const handleSignOut = () =>{
         signOut(auth);
     }
@@ -21,14 +22,9 @@ const Navbar = () => {
                                 <li><Link to='/blogs'>Blogs</Link></li>
                                 {
                                     user?
-                                       <div className='signout-button'>
-                                           <button onClick={handleSignOut}>sign out</button>
-                                       </div>
+                                        <button onClick={handleSignOut}>sign out</button>
                                     :
-                                    <div className='login-button'>
                                         <li><Link to='/login'>Login</Link></li>
-                                        <li><Link to='/register'>Register</Link></li>
-                                    </div>
                                 }
                             </ul>
                         </div>

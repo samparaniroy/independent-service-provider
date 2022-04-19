@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
-    let errorElemnt;
+    let errorElement;
     if (error) {
-        errorElemnt=<div>
+        errorElement=<div>
             <p className='text-danger'>Error: {error.message}</p>
         </div>
       }
@@ -23,7 +23,7 @@ const SocialLogin = () => {
                 <p className='mt-2 px-2'>or</p>
                 <div style={{height: '1px'}} className='bg-primary w-50'></div>
             </div>
-            {errorElemnt}
+            {errorElement}
             <div>
                 <button onClick={() => signInWithGoogle()} className='sign-button'> <img src="images/google.png" alt="" /> Google Sign In</button>
             </div>
