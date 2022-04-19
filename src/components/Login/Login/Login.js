@@ -11,8 +11,7 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate =useNavigate();
-    const location = useLocation
-    let from = location.state?.from?.pathname || "/";
+    let errorElement;
     const [
         signInWithEmailAndPassword,
         user,
@@ -22,8 +21,11 @@ const Login = () => {
       const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail( auth);
       
       if(user){
-        navigate(from, { replace: true });
+        navigate('/');
     }
+    if (error) {
+        errorElement=<p className='text-danger'>Error: {error.message}</p>
+      }
 
     const handleSubmit = event =>{
         event.preventDefault();
@@ -49,12 +51,13 @@ const Login = () => {
             <div className='login-form-area'>
                 <h2>Please Login</h2>
                 <form onSubmit={ handleSubmit}>
-                    <input ref={emailRef} type="email" name="email" id="" placeholder='email'/>
+                    <input ref={emailRef} type="email" name="email" id="" placeholder='email' required/>
                     <br />
-                    <input ref={passwordRef} type="password" name="password" id="" placeholder='password'/>
+                    <input ref={passwordRef} type="password" name="password" id="" placeholder='password' required/>
                     <br />
                     <input className='submit-button' type="submit" value="submit" />
                 </form>
+                {errorElement}
                 <p>If You Haven't Account Yet? <Link to='/register' className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
                 <p>Forget Password? <button to ='/register' className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
                 <SocialLogin></SocialLogin>

@@ -1,0 +1,38 @@
+.develop-area{
+    padding: 0px 0 80px 0;
+    overflow: hidden;  
+}
+.develop-image{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.develop-image img{
+    width: 80%;
+}
+.develop-content{
+    width: 50%;
+    float: right;
+    padding-bottom: 60px;
+}
+.develop-content h1{
+    color: #333333;
+    font-size: 36px;
+    max-width: 280px;
+    padding-bottom: 20px;
+}
+.develop-content p{
+    color: #3E3E3E;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 654px; 
+    padding-bottom: 60px;
+    
+}
+.develop-content a{
+    background:  #FF5959;
+    padding: 20px 40px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}

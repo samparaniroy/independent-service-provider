@@ -39,11 +39,11 @@ const Register = () => {
         <div className='register-form-area'>
             <h2>Plase Register</h2>
             <form onSubmit={handleRegister}>
-                <input type="text" name="name" placeholder='name'/>
+                <input type="text" name="name" placeholder='name' required/>
                 <br />
-                <input type="email" name="email" id="" placeholder='email'/>
+                <input type="email" name="email" id="" placeholder='email' required/>
                 <br />
-                <input type="password" name="password" id="" placeholder='password'/>
+                <input type="password" name="password" id="" placeholder='password' required/>
                 <br />
                 <input className='submit-button' type="submit" value="Register" />
             </form>

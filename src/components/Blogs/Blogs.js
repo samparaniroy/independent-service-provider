@@ -14,7 +14,7 @@ const Blogs = () => {
                 </div>
                 <div>
                     <h2 className='mt-4 mb-4'>What other services does firebase provide other than authentication</h2>
-                    <p>Firebase is originally developed by Firebase inc and later acquired by Google.There are more services besides Firebase Grameen. E.g., Cloud Firestore,
+                    <p className='pb-4'>Firebase is originally developed by Firebase inc and later acquired by Google.There are more services besides Firebase Grameen. E.g., Cloud Firestore,
                     Cloud Functions, Hosting, Cloud Storage, Google Analytics, Predictions, Cloud Messaging.Google Analytics The service provides visualization of all this information on just a single tap.Predictions service helps you in making predictions about your product decisions</p>
                 </div>
             </div>

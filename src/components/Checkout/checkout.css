@@ -1,7 +1,10 @@
+.checkout-content h2 {
+	text-align: center;
+	padding-top: 30px;
+}
 .checkout-form-area {
 	padding: 40px;
 	text-align: center;
-    box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.238);
 }
 .checkout-form-area form input {
 	width: 40%;
@@ -10,4 +13,8 @@
     padding: 0 10px;
     border-radius: 5px;
     bottom: 2px solid #0b114a;
+}
+.checkout-form-area .submit-button {
+	background: #0b114a;
+	width: 40% !important;
 }
